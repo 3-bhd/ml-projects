@@ -39,9 +39,9 @@ All numbers below come from the executed notebook (`results/summary.json`).
 | Logistic Regression | **0.892 ± 0.044** | 0.780 ± 0.082 | 0.849 ± 0.082 | 0.808 ± 0.049 | 0.831 ± 0.043 |
 | SVM | 0.887 ± 0.048 | 0.753 ± 0.085 | 0.837 ± 0.075 | 0.789 ± 0.062 | 0.817 ± 0.050 |
 | Random Forest | 0.891 ± 0.039 | 0.771 ± 0.095 | 0.812 ± 0.070 | 0.787 ± 0.067 | 0.811 ± 0.054 |
-| XGBoost | 0.875 ± 0.039 | 0.774 ± 0.093 | 0.790 ± 0.059 | 0.777 ± 0.055 | 0.799 ± 0.048 |
+| XGBoost | 0.871 ± 0.039 | 0.774 ± 0.093 | 0.790 ± 0.059 | 0.777 ± 0.055 | 0.799 ± 0.048 |
 
-The models are within about 0.02 ROC-AUC of each other, smaller than the fold-to-fold spread, so none is clearly better. Logistic Regression has the highest mean ROC-AUC and was selected; it is also the easiest to explain.
+The models are within about 0.02 ROC-AUC of each other, smaller than the fold-to-fold spread, so none is clearly better. Logistic Regression has the highest mean ROC-AUC and was selected; it is also the easiest to explain. (XGBoost's mean nested-CV ROC-AUC varies slightly by library version — 0.871 on re-run versus 0.875 originally — both well within its own fold-to-fold spread.)
 
 **Held-out test set (61 patients, 28 with disease), threshold 0.5.**
 
