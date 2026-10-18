@@ -1,8 +1,8 @@
-# Task 4: Disease Prediction from Medical Data
+# Heart Disease Prediction
 
-CodeAlpha Machine Learning Internship · Omar Abdelhady
+Omar Abdelhady
 
-> **Educational model only. Not for clinical use.** This model was built for an internship task on 303 patients from a single hospital in the 1980s. It has not been externally validated and must not be used to make or support any medical decision.
+> **Educational model only. Not for clinical use.** This model was built as a personal project on 303 patients from a single hospital in the 1980s. It has not been externally validated and must not be used to make or support any medical decision.
 
 ## Problem
 
@@ -82,7 +82,7 @@ One more sick patient is caught at the cost of four more healthy patients being 
 ## Repository contents
 
 ```
-task4_disease_prediction/
+heart-disease-prediction/
 ├── disease_prediction.ipynb   # full analysis, executed with outputs
 ├── requirements.txt
 ├── README.md
@@ -93,7 +93,7 @@ task4_disease_prediction/
 ## How to run
 
 ```bash
-cd task4_disease_prediction
+cd heart-disease-prediction
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt

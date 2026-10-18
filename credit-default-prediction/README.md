@@ -1,6 +1,6 @@
-# Task 1: Credit Scoring Model
+# Credit Default Prediction
 
-**CodeAlpha Machine Learning Internship** | Omar Abdelhady
+Omar Abdelhady
 
 Predicting whether a credit card client will default on next month's payment from six months of billing and
 repayment history, comparing Logistic Regression, a Decision Tree and a Random Forest, and choosing the
@@ -157,7 +157,7 @@ utilization features. Credit limit is the strongest non-delinquency signal.
 ## How to run
 
 ```bash
-# from the task1_credit_scoring folder, ideally in a fresh virtual environment (Python 3.11+)
+# from the credit-default-prediction folder, ideally in a fresh virtual environment (Python 3.11+)
 pip install -r requirements.txt
 jupyter notebook credit_scoring.ipynb      # then Run All
 ```
@@ -171,7 +171,7 @@ whichever source the data comes from. To work offline, put the UCI file at
 ## Files
 
 ```
-task1_credit_scoring/
+credit-default-prediction/
 ├── credit_scoring.ipynb   # full analysis, executed with outputs
 ├── requirements.txt
 ├── README.md
