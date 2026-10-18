@@ -1,0 +1,204 @@
+{
+  "n_train": 242,
+  "n_test": 61,
+  "test_positives": 28,
+  "nested_cv": {
+    "Logistic Regression": {
+      "roc_auc": [
+        0.8924,
+        0.0437
+      ],
+      "recall": [
+        0.78,
+        0.0819
+      ],
+      "precision": [
+        0.8492,
+        0.0817
+      ],
+      "f1": [
+        0.8078,
+        0.0493
+      ],
+      "accuracy": [
+        0.8306,
+        0.0425
+      ]
+    },
+    "SVM": {
+      "roc_auc": [
+        0.8869,
+        0.0483
+      ],
+      "recall": [
+        0.753,
+        0.0853
+      ],
+      "precision": [
+        0.8369,
+        0.0754
+      ],
+      "f1": [
+        0.7892,
+        0.0617
+      ],
+      "accuracy": [
+        0.817,
+        0.0502
+      ]
+    },
+    "Random Forest": {
+      "roc_auc": [
+        0.8914,
+        0.0395
+      ],
+      "recall": [
+        0.771,
+        0.095
+      ],
+      "precision": [
+        0.8117,
+        0.0702
+      ],
+      "f1": [
+        0.7875,
+        0.0668
+      ],
+      "accuracy": [
+        0.8114,
+        0.0544
+      ]
+    },
+    "XGBoost": {
+      "roc_auc": [
+        0.875,
+        0.0394
+      ],
+      "recall": [
+        0.774,
+        0.0929
+      ],
+      "precision": [
+        0.7898,
+        0.0592
+      ],
+      "f1": [
+        0.7775,
+        0.0545
+      ],
+      "accuracy": [
+        0.7988,
+        0.0477
+      ]
+    }
+  },
+  "test_threshold_0.5": {
+    "Logistic Regression": {
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "f1": 0.8667,
+      "roc_auc": 0.9578,
+      "accuracy": 0.8689
+    },
+    "SVM": {
+      "precision": 0.8387,
+      "recall": 0.9286,
+      "f1": 0.8814,
+      "roc_auc": 0.96,
+      "accuracy": 0.8852
+    },
+    "Random Forest": {
+      "precision": 0.8387,
+      "recall": 0.9286,
+      "f1": 0.8814,
+      "roc_auc": 0.9545,
+      "accuracy": 0.8852
+    },
+    "XGBoost": {
+      "precision": 0.8621,
+      "recall": 0.8929,
+      "f1": 0.8772,
+      "roc_auc": 0.9545,
+      "accuracy": 0.8852
+    }
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 1,
+      "class_weight": "balanced"
+    },
+    "SVM": {
+      "C": 1,
+      "gamma": 0.01,
+      "kernel": "rbf"
+    },
+    "Random Forest": {
+      "max_depth": 6,
+      "max_features": "sqrt",
+      "min_samples_leaf": 5
+    },
+    "XGBoost": {
+      "learning_rate": 0.03,
+      "max_depth": 2,
+      "n_estimators": 100,
+      "subsample": 0.8
+    }
+  },
+  "best_model": "Logistic Regression",
+  "target_recall": 0.9,
+  "threshold": 0.3161,
+  "best_model_test": {
+    "threshold 0.5": {
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "f1": 0.8667,
+      "roc_auc": 0.9578,
+      "accuracy": 0.8689
+    },
+    "threshold 0.316": {
+      "precision": 0.7297,
+      "recall": 0.9643,
+      "f1": 0.8308,
+      "roc_auc": 0.9578,
+      "accuracy": 0.8197
+    }
+  },
+  "confusion_0.5": [
+    [
+      27,
+      6
+    ],
+    [
+      2,
+      26
+    ]
+  ],
+  "confusion_chosen": [
+    [
+      23,
+      10
+    ],
+    [
+      1,
+      27
+    ]
+  ],
+  "permutation_top": {
+    "ca": 0.0948,
+    "cp": 0.035,
+    "slope": 0.0161,
+    "thal": 0.0135,
+    "oldpeak": 0.0118,
+    "thalach": 0.0108
+  },
+  "shap_top": {
+    "ca": 1.1652,
+    "sex": 0.575,
+    "cp_4.0": 0.486,
+    "thal_7.0": 0.3815,
+    "thalach": 0.3121,
+    "slope_2.0": 0.2954,
+    "thal_3.0": 0.2904,
+    "slope_1.0": 0.2378
+  }
+}

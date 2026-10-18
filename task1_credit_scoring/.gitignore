@@ -1,0 +1,4 @@
+# Optional local copy of the dataset; the notebook downloads it automatically.
+data/
+.ipynb_checkpoints/
+__pycache__/

@@ -1,0 +1,9 @@
+# Tested with Python 3.13. Versions pinned to the exact run that produced the reported results.
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.52.0
+matplotlib==3.11.2
+# To open and run the notebook
+jupyter
