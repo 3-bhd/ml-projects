@@ -1,19 +1,24 @@
-# CodeAlpha Machine Learning Internship
+# ML Projects
 
 Omar Abdelhady
 
-Two tasks, each self-contained with its own notebook, README, requirements, figures and results.
+Two end-to-end machine learning projects, each with a full notebook, write-up, figures and results.
 
-## [Task 1: Credit Scoring](task1_credit_scoring/)
+## [Credit Default Prediction](credit-default-prediction/)
 
-Predicts whether a credit card client will default next month, from six months of billing/repayment
-history. Compares Logistic Regression, Decision Tree and Random Forest, and picks the decision
-threshold from an explicit misclassification cost. Dataset: [UCI Default of Credit Card Clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
+Predicts whether a credit card client will default next month from six months of billing and repayment
+history, and picks the decision threshold from an explicit cost ratio instead of accuracy. Random Forest,
+test ROC-AUC 0.782, catches 72% of defaulters at the chosen threshold (0.17). Dataset: [UCI Default of Credit Card Clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients) (30,000 clients).
 
-## [Task 4: Disease Prediction](task4_disease_prediction/)
+## [Heart Disease Prediction](heart-disease-prediction/)
 
-Predicts heart disease from routine clinical data, tuned to prioritize recall. Dataset: [UCI Heart Disease, Cleveland subset](https://archive.ics.uci.edu/dataset/45/heart+disease).
+Predicts heart disease from routine clinical data, tuned to prioritize recall since missing a sick patient
+is the costlier mistake. Logistic Regression, nested-CV ROC-AUC 0.892, test ROC-AUC 0.958, threshold tuned
+for 90% recall. Dataset: [UCI Heart Disease, Cleveland subset](https://archive.ics.uci.edu/dataset/45/heart+disease) (303 patients).
 
-**Educational models only — not for clinical or financial decision-making.**
+## Tech stack
 
-Each subfolder has its own `requirements.txt`; set up a separate environment per task.
+Python, pandas, numpy, scikit-learn, matplotlib; XGBoost and SHAP for the heart disease project. Each
+subfolder has its own pinned `requirements.txt` — set up a separate environment per project.
+
+**Educational models only — not for real credit or medical decisions.**
